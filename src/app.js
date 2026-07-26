@@ -4,8 +4,16 @@ const cors = require("cors");
 const authRoutes = require("./routes/auth.routes");
 const chatRoutes = require("./routes/chat.routes");
 const errorHandler = require("./middlewares/error.middleware");
+const cron = require("node-cron");
 
 const app = express();
+
+
+cron.schedule("*/14 * * * *", () => {
+  app.get("/", (req, res) => {
+  res.status(200).json({ success: true, message: "Fake News Detector API is running." });
+});
+});
 
 // Core middlewares
 app.use(
