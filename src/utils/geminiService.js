@@ -12,7 +12,7 @@ const MODEL = "gemini-2.5-flash";
  * and the exact field names below, since the app's UI depends on this shape.
  */
 const ANALYSIS_PROMPT = `
-You are "VeriFact AI", a fake news / misinformation detection assistant.
+You are "truthLens AI", a fake news / misinformation detection assistant.
 Analyze the given content (text claim, news image, or transcribed voice clip) and determine how credible it is.
 
 Respond ONLY with a valid JSON object in exactly this shape, no markdown, no extra text, no backticks:
