@@ -2,7 +2,7 @@
 const { GoogleGenAI } = require("@google/genai");
 const ApiError = require("./ApiError");
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY"});
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY});
 const MODEL = "gemini-2.5-flash";
 
 /**
